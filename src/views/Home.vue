@@ -1,14 +1,13 @@
 <template>
   <el-container>
-    <el-aside class="menu" style="width: auto;height: 100vh;">
+    <el-aside class="menu" style="width: auto;height: 100vh;overflow: hidden;">
       <Aside></Aside>
     </el-aside>
     <el-container>
-      <el-main style="background-color: #42b983">
-        中间部分
+      <el-main>
         <router-view></router-view>
       </el-main>
-      <el-footer style="background-color: cadetblue">
+      <el-footer style="height: auto">
         <Footer></Footer>
       </el-footer>
     </el-container>
@@ -23,6 +22,17 @@ export default {
   components: {
     Footer,
     Aside
-  }
+  },
+  data(){
+    return{
+
+    }
+  },
+  methods:{
+
+  },
 }
 </script>
+<style lang="scss">
+
+</style>
